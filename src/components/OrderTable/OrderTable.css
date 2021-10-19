@@ -1,0 +1,15 @@
+.btnBox{
+    display: flex;
+    justify-content: space-around;
+}
+.addBtnBox{
+    margin-bottom: 10px;
+}
+.delBtn{
+    margin-left: 10px;
+}
+
+.file{
+    width: 100px;
+    height: 100px;
+}

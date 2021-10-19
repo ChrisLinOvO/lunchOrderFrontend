@@ -1,0 +1,89 @@
+@import '~@alifd/theme-4/dist/next.css';
+
+
+
+@media screen and (min-aspect-ratio: 13/9),screen and (min-width: 500px) {
+   
+   
+   
+    
+    .app{
+        z-index: -1;
+        width: 100vw;
+        min-height: 100vh;
+        margin: 0 auto;
+        background-image: url(bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+        -webkit-touch-callout: none;
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently*/
+        color: #ffffff;
+      
+        
+    
+        
+    }
+ 
+    .app::-webkit-scrollbar {
+        display: none;
+      }
+    .title{
+        font-size: 2.5vw;
+    
+    }
+    .box{
+        display: flex;
+        align-items: center;
+    }
+    .payText{
+        width: 30%;
+        margin-left: 10vw;
+        font-size: 1.8vw;
+    
+    }
+  
+}
+@media screen and (max-aspect-ratio: 13/9) and (orientation: portrait),screen and (max-aspect-ratio: 13/9) and (max-width: 500px){
+   
+  
+    .app{
+        z-index: -1;
+        width: 100vw;
+        min-height: 100vh;
+        margin: 0 auto;
+        background-image: url(bg1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+        -webkit-touch-callout: none;
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently*/
+        color: #ffffff;
+    }
+  
+    .app::-webkit-scrollbar {
+        display: none;
+      }
+      .title{
+        font-size: 5vw;
+    
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .payText{
+        /* margin-left: 20vw; */
+        font-size: 3.6vw;
+    
+    }
+}

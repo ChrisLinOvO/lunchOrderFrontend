@@ -1,0 +1,11 @@
+.btnBox{
+    display: flex;
+    justify-content: space-around;
+}
+.addBox{
+    margin-bottom: 10px;
+}
+.file{
+    width: 100px;
+    height: 100px;
+}
