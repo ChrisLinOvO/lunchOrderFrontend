@@ -294,18 +294,23 @@ const OrderTable = (props) => {
 
 
   function createOrders() {//Use orders create
-    funCreate({ ...writeData, stage: "完成",pay:false }).then((res) => {
-      Swal.fire('成功!', `此資料已新增`, 'success');
-      console.log('==create success:', res);
-      serverDataUpdate();
-      setWriteData({});
-      setParsed64('');
-      setEditKey(false);
-      setPopupState(false);
-    }).catch((error) => {
-      console.log('==create fail:', error);
-      // Message.error(`${err}`);
-    })
+    if(!writeData.hasOwnProperty("name")||!writeData.hasOwnProperty("text")||!writeData.hasOwnProperty("money")){
+      Message.warning("請確實填寫資料");
+    }else{
+      funCreate({ ...writeData, stage: "完成",pay:false }).then((res) => {
+        Swal.fire('成功!', `此資料已新增`, 'success');
+        console.log('==create success:', res);
+        serverDataUpdate();
+        setWriteData({});
+        setParsed64('');
+        setEditKey(false);
+        setPopupState(false);
+      }).catch((error) => {
+        console.log('==create fail:', error);
+        // Message.error(`${err}`);
+      })
+    }
+  
 
   }
 
