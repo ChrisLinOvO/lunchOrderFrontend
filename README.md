@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# EZCON 午餐訂購系統後台
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+午餐訂購系統的後台管理介面，基於 React + Alita (阿里飛冰) 构建。
 
-## Available Scripts
+## 功能
 
-In the project directory, you can run:
+- 午餐訂購管理
+- 訂單狀態追蹤
+- 付款狀態查詢
+- 即時通知
 
-### `yarn start`
+## 環境準備
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+# 安裝依賴
+npm install --legacy-peer-deps
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# 啟動開發環境
+npm start
 
-### `yarn test`
+# 執行測試
+npm test
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 建置生產版本
+npm run build
+```
 
-### `yarn build`
+## 技術棧
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| 套件 | 版本 | 用途 |
+|------|------|------|
+| React | 17.0.2 | UI 框架 |
+| @alifd/next | 1.21.0-beta.4 | 阿里飛冰元件庫 |
+| axios | 1.6.0 | HTTP 客戶端 |
+| socket.io-client | 4.7.0 | 即時通訊 |
+| sweetalert2 | 11.10.0 | 提示框 |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 部署
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+已設定 GitHub Actions 自動部署，合并到 master 分支後自動觸發。
 
-### `yarn eject`
+## 開發
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+本專案使用 `react-app-rewired` 擴展 CRA 配置。
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# 新增依賴
+npm install <package> --legacy-peer-deps
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# 更新依賴
+npm update --legacy-peer-deps
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 授權
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ISC
