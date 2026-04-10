@@ -7,7 +7,7 @@
     "@alifd/next": "^1.21.0-beta.4",
     "@alifd/theme-4": "^0.4.1",
     "@alifd/theme-design-pro": "^0.6.2",
-    "@feathersjs/client": "^4.5.11",
+    "@feathersjs/client": "^5.0.44",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
